@@ -14,7 +14,6 @@ import Meta
 import MastodonMeta
 import MetaTextKit
 import UnifiedBlurHash
-import ArkanaKeys
 
 // swiftlint:disable:next type_body_length
 final class PostCardModel {
@@ -332,7 +331,7 @@ final class PostCardModel {
     // check if the post is from a tip account.
     var isTipAccount: Bool {
         if let server = originalInstanceName {
-            return server == ArkanaKeys.Global().subClubDomain
+            return server == Configuration.SubClubDomain
         } else {
             return false
         }

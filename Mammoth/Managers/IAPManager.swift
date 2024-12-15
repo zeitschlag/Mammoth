@@ -7,7 +7,6 @@
 
 import UIKit
 import StoreKit
-import ArkanaKeys
 
 public let didUpdatePurchaseStatus = Notification.Name("didUpdatePurchaseStatus")
 
@@ -369,7 +368,7 @@ extension IAPManager {
             let receiptData = try Data(contentsOf: appStoreReceiptURL)
             let receiptString = receiptData.base64EncodedString()
 
-            let receiptDictionary = ["receipt-data": receiptString, "password": ArkanaKeys.Global().iAPVerificationSecret]
+            let receiptDictionary = ["receipt-data": receiptString, "password": Configuration.IapVerificationSecret]
 
             guard let requestData = try? JSONSerialization.data(withJSONObject: receiptDictionary) else {
                 return .failure(error: NSError(domain: "Receipt Validation", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid receipt format"]))

@@ -9,7 +9,6 @@
 import UIKit
 import Meta
 import MetaTextKit
-import ArkanaKeys
 
 class ProfileHeader: UIView {
     
@@ -631,7 +630,7 @@ extension ProfileHeader {
                 tipUser = user.tippableAccount?.user
                 tipUsername = user.tippableAccount?.accountname
             }
-            if let tipUser, let tipAccount = tipUser.account, let tipUsername, let url = URL(string: "https://\(ArkanaKeys.Global().subClubDomain)/@\(tipUsername)/subscribe?callback=mammoth://subclub&id=@\(currentAccount)&theme=\(theme)") {
+            if let tipUser, let tipAccount = tipUser.account, let tipUsername, let url = URL(string: "https://\(Configuration.SubClubDomain)/@\(tipUsername)/subscribe?callback=mammoth://subclub&id=@\(currentAccount)&theme=\(theme)") {
                 FollowManager.shared.followAccount(tipAccount)
                 var vc: WebViewController!
                 if let tippableUserCard = user.tippableAccount?.user {

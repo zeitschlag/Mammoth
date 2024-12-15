@@ -7,8 +7,6 @@
 //
 
 import Foundation
-import Segment
-import ArkanaKeys
 
 enum Events: String {
     case newPost
@@ -36,39 +34,17 @@ enum Events: String {
     case unrepost
 }
 
+@available(*, deprecated, message: "Don't analytics")
 class AnalyticsManager {
-    private let analytics: Analytics
     static let shared = AnalyticsManager()
     
     init() {
-        #if DEBUG
-        let key = ArkanaKeys.Staging().analyticsKey
-        let config = Configuration(writeKey: key)
-            .trackApplicationLifecycleEvents(true)
-            .flushAt(1)
-            .flushInterval(5)
-        
-        analytics = Analytics(configuration: config)
-        
-        #else
-        let key = ArkanaKeys.Production().analyticsKey
-        let config = Configuration(writeKey: key)
-            .trackApplicationLifecycleEvents(true)
-            .flushAt(3)
-            .flushInterval(10)
-        
-        analytics = Analytics(configuration: config)
-        #endif
-        
-        analytics.enabled = GlobalStruct.shareAnalytics
+
     }
     
     func prepareForUse() {
         NotificationCenter.default.addObserver(self, selector: #selector(self.didSwitchAccount), name: didSwitchCurrentAccountNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.didUpdatePurchase), name: didUpdatePurchaseStatus, object: nil)
-        
-        analytics.add(plugin: DeviceToken())
-        analytics.add(plugin: UIKitScreenTracking())
     }
     
     @objc func didSwitchAccount(_ notification: NSNotification) {
@@ -80,75 +56,43 @@ class AnalyticsManager {
     }
     
     private func callActivities() {
-        if GlobalStruct.shareAnalytics {
-            if let currentFullAccount = AccountsManager.shared.currentAccount?.remoteFullOriginalAcct {
-                // We used to call out to a simple feature.moth.social checkin here
-                // Now this is stubbed above
-                // I think we'll likely want other types of analytics at some point so I'm leaving this in
-            } else {
-                log.warning("no account to check in with")
-            }
-        }
     }
     
     static public func track(event: Events, props: [String:Any]? = [:]) {
-        if GlobalStruct.shareAnalytics {
-            self.shared.analytics.track(name: event.rawValue, properties: props)
-        }
+
     }
     
     static public func reportError(_ error: Error) {
-        if GlobalStruct.shareAnalytics {
-            self.shared.analytics.reportInternalError(error)
-        }
+
     }
     
     static public func identity(userId: String, identity: IdentityData) {
-        if GlobalStruct.shareAnalytics {
-            self.shared.analytics.identify(userId: userId, traits: identity)
-        }
+
     }
     
     static public func alias(userId: String) {
-        if GlobalStruct.shareAnalytics {
-            self.shared.analytics.alias(newId: userId)
-        }
+
     }
     
     static public func openURL(url: URL) {
-        if GlobalStruct.shareAnalytics {
-            self.shared.analytics.openURL(url)
-        }
+
     }
     
     static public func setDeviceToken(token: Data) {
-        if GlobalStruct.shareAnalytics {
-            self.shared.analytics.registeredForRemoteNotifications(deviceToken: token)
-        }
+
     }
     
     static public func failedToRegisterForPushNotifications(error: Error?) {
-        if GlobalStruct.shareAnalytics {
-            self.shared.analytics.failedToRegisterForRemoteNotification(error: error)
-        }
+
     }
     
     static public func subscribe() {
-        self.shared.analytics.enabled = true
-        self.shared.analytics.identify(traits: ["shareAnalytics": true])
-        self.shared.analytics.flush()
     }
     
     static public func unsubscribe() {
-        self.shared.analytics.identify(traits: ["shareAnalytics": false])
-        self.shared.analytics.flush()
-        self.shared.analytics.reset()
-        self.shared.analytics.enabled = false
     }
     
     static public func reset() {
-        self.shared.analytics.flush()
-        self.shared.analytics.reset()
     }
     
 }

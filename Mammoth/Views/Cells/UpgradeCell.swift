@@ -7,7 +7,6 @@
 
 import UIKit
 import StoreKit
-import ArkanaKeys
 
 // MARK: - UITableViewCell
 
@@ -374,7 +373,7 @@ final class UpgradeRootView: UIView, UpgradeOptionDelegate {
     private func openCommunityWebView() {
         let userId = (AccountsManager.shared.currentAccount as? MastodonAcctData)?.remoteFullOriginalAcct
         let queryItems = [URLQueryItem(name: "id", value: userId)]
-        var communityURLComponents = URLComponents(string: ArkanaKeys.Global().joinCommunityPageURL)!
+        var communityURLComponents = URLComponents(string: Configuration.JoinCommunityPageURL)!
         communityURLComponents.queryItems = queryItems
         if let communityURL = communityURLComponents.url {
             let vc = WebViewController(url: communityURL.absoluteString)

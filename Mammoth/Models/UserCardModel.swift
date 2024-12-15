@@ -12,7 +12,6 @@ import Kingfisher
 import Meta
 import MastodonMeta
 import MetaTextKit
-import ArkanaKeys
 
 class UserCardModel {
     let id: String
@@ -127,7 +126,7 @@ class UserCardModel {
         self.fields = account?.fields
         self.fields?.forEach({$0.configureMetaContent(with: emojisDic)})
         self.joinedOn = account?.createdAt?.toDate()
-        self.isTippable = instanceName == ArkanaKeys.Global().subClubDomain
+        self.isTippable = instanceName == Configuration.SubClubDomain
         self.tippableAccount = nil
     }
     
@@ -180,7 +179,7 @@ class UserCardModel {
         self.fields = account.fields
         self.fields?.forEach({$0.configureMetaContent(with: emojisDic)})
         self.joinedOn = account.createdAt?.toDate()
-        self.isTippable = account.acct.hasSuffix(ArkanaKeys.Global().subClubDomain)
+        self.isTippable = account.acct.hasSuffix(Configuration.SubClubDomain)
         
         if let premiumAccount{
             self.tippableAccount = premiumAccount
@@ -188,7 +187,7 @@ class UserCardModel {
             // detect tippable link in profile fields.
             var premiumAcct: String? = nil
             for field in account.fields {
-                if let s = field.value.matchingStrings(regex: "https://\(ArkanaKeys.Global().subClubDomain)/users/([a-z0-9-_]+)").first?[1] {
+                if let s = field.value.matchingStrings(regex: "https://\(Configuration.SubClubDomain)/users/([a-z0-9-_]+)").first?[1] {
                     premiumAcct = s
                     break
                 }
@@ -299,7 +298,7 @@ extension UserCardModel {
     func getTipInfo() async throws -> UserCardModel.TippableAccount? {
         if let tippableAccount = self.tippableAccount {
             do {
-            let request = Search.search(query: tippableAccount.accountname + "@" + ArkanaKeys.Global().subClubDomain, resolve: true)
+                let request = Search.search(query: tippableAccount.accountname + "@" + Configuration.SubClubDomain, resolve: true)
             let result = try await ClientService.runRequest(request: request)
                 if let account = (result.accounts.first) {
                     let followStatus = FollowManager.shared.followStatusForAccount(account, requestUpdate: .force) == .following

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ArkanaKeys
 
 struct InstanceService {
     
@@ -42,7 +41,7 @@ struct InstanceService {
         request.httpMethod = "GET"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
-        request.addValue("Bearer \(ArkanaKeys.Global().instanceSocialAPI)", forHTTPHeaderField: "Authorization")
+        request.addValue("Bearer \(Configuration.InstanceSocialAPI)", forHTTPHeaderField: "Authorization")
         let sessionConfig = URLSessionConfiguration.default
         let session = URLSession(configuration: sessionConfig)
         do {

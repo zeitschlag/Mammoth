@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 import AuthenticationServices
 import SafariServices
-import ArkanaKeys
 
 // swiftlint:disable:next type_body_length
 class SignInViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
@@ -143,7 +142,7 @@ class SignInViewController: UIViewController, UITableViewDataSource, UITableView
         request.httpMethod = "GET"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
-        request.addValue("Bearer \(ArkanaKeys.Global().instanceSocialAPI)", forHTTPHeaderField: "Authorization")
+        request.addValue("Bearer \(Configuration.InstanceSocialAPI)", forHTTPHeaderField: "Authorization")
         let sessionConfig = URLSessionConfiguration.default
         let session = URLSession(configuration: sessionConfig)
         let task = session.dataTask(with: request) { (data, response, err) in
@@ -184,7 +183,7 @@ class SignInViewController: UIViewController, UITableViewDataSource, UITableView
         request.httpMethod = "GET"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
-        request.addValue("Bearer \(ArkanaKeys.Global().instanceSocialAPI)", forHTTPHeaderField: "Authorization")
+        request.addValue("Bearer \(Configuration.InstanceSocialAPI)", forHTTPHeaderField: "Authorization")
         let sessionConfig = URLSessionConfiguration.default
         let session = URLSession(configuration: sessionConfig)
         let task = session.dataTask(with: request) { (data, response, err) in

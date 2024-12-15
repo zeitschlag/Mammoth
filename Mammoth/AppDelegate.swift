@@ -9,7 +9,6 @@
 import UIKit
 import UserNotifications
 import BackgroundTasks
-import ArkanaKeys
 import AVFoundation
 
 @main
@@ -60,12 +59,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         }
         
         // Open URL in customer.io push notifications
-        if let urlStr = (info as? Dictionary<String, Any>)?[keyPath: "CIO.push.link"] as? String, let url = URL(string: urlStr) {
-            let prevValue = GlobalStruct.openLinksInBrowser
-            GlobalStruct.openLinksInBrowser = false
-            PostActions.openLink(url)
-            GlobalStruct.openLinksInBrowser = prevValue
-        }
+//        if let urlStr = (info as? Dictionary<String, Any>)?[keyPath: "CIO.push.link"] as? String, let url = URL(string: urlStr) {
+//            let prevValue = GlobalStruct.openLinksInBrowser
+//            GlobalStruct.openLinksInBrowser = false
+//            PostActions.openLink(url)
+//            GlobalStruct.openLinksInBrowser = prevValue
+//        }
     }
         
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
@@ -162,7 +161,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         UNUserNotificationCenter.current().delegate = self
         
         UIFont.swizzle()
-        SwiftyGiphyAPI.shared.apiKey = ArkanaKeys.Global().swiftyGiphyAPI
+        SwiftyGiphyAPI.shared.apiKey = Configuration.SwiftyGiphyAPI
         
         GlobalStruct.deviceToken = UserDefaults.standard.value(forKey: "deviceToken") as? Data
         
@@ -276,12 +275,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: .mixWithOthers)
         
         if let userInfo = launchOptions?[UIApplication.LaunchOptionsKey.remoteNotification] {
-            if let urlStr = (userInfo as? Dictionary<String, Any>)?[keyPath: "CIO.push.link"] as? String, let url = URL(string: urlStr) {
-                let prevValue = GlobalStruct.openLinksInBrowser
-                GlobalStruct.openLinksInBrowser = false
-                PostActions.openLink(url)
-                GlobalStruct.openLinksInBrowser = prevValue
-            }
+//            if let urlStr = (userInfo as? Dictionary<String, Any>)?[keyPath: "CIO.push.link"] as? String, let url = URL(string: urlStr) {
+//                let prevValue = GlobalStruct.openLinksInBrowser
+//                GlobalStruct.openLinksInBrowser = false
+//                PostActions.openLink(url)
+//                GlobalStruct.openLinksInBrowser = prevValue
+//            }
         }
 
         return true

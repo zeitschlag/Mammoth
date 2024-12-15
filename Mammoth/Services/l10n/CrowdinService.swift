@@ -8,12 +8,11 @@
 
 import Foundation
 import CrowdinSDK
-import ArkanaKeys
 
 struct l10n {
 
     public static func start() {
-        let crowdinProviderConfig = CrowdinProviderConfig(hashString: ArkanaKeys.Global().crowdinDistributionString,
+        let crowdinProviderConfig = CrowdinProviderConfig(hashString: Configuration.CrowdinDistributionString,
                                                           sourceLanguage: GlobalStruct.rootLocalization)
         
         let crowdinSDKConfig = CrowdinSDKConfig.config().with(crowdinProviderConfig: crowdinProviderConfig)

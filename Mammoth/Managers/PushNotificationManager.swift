@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ArkanaKeys
 
 class PushNotificationManager {
     
@@ -23,16 +22,16 @@ class PushNotificationManager {
     @discardableResult
     static func subscribe(deviceToken: Data, account: MastodonAcctData) async throws -> URLResponse? {
         log.debug("subscribing to pushes for account: \(account.fullAcct)")
-        let pushNotificationURL = ArkanaKeys.Production().pushNotificationURL
+        let pushNotificationURL = Configuration.PushNotificationURL
         let tokenParts = deviceToken.map { data in String(format: "%02.2hhx", data) }
         let token = tokenParts.joined()
         
-        var urH = "\(pushNotificationURL)\(token)"
-#if DEBUG
-        // Set to staging environment
-        let pushNotificationURLDevelopment = ArkanaKeys.Staging().pushNotificationURL
-        urH = "\(pushNotificationURLDevelopment)\(token)"
-#endif
+        let urH = "\(pushNotificationURL)\(token)"
+//#if DEBUG
+//        // Set to staging environment
+//        let pushNotificationURLDevelopment = ArkanaKeys.Staging().pushNotificationURL
+//        urH = "\(pushNotificationURLDevelopment)\(token)"
+//#endif
         
         guard let receiver = try? PushNotificationReceiver(forDeviceToken: token) else {
             throw PushNotificationServiceError.receiverSetupFailed

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1440C9022BC8006800799A4F /* fa-brand.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1440C9012BC8006800799A4F /* fa-brand.otf */; };
-		1440C9062BCD811C00799A4F /* Segment in Frameworks */ = {isa = PBXBuildFile; productRef = 1440C9052BCD811C00799A4F /* Segment */; };
 		1440C90B2BD00FBE00799A4F /* IdentityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440C90A2BD00FBE00799A4F /* IdentityData.swift */; };
 		144173572B21E0480058AFCC /* TutorialOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144173562B21E0480058AFCC /* TutorialOverlay.swift */; };
 		1441735A2B21E4490058AFCC /* TextBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144173592B21E4490058AFCC /* TextBubbleView.swift */; };
@@ -32,7 +31,6 @@
 		146C6A472B48113500A002D7 /* String+StripEmojis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146C6A462B48113500A002D7 /* String+StripEmojis.swift */; };
 		14740AFF2BD68E9600DE2440 /* DevelopmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14740AFE2BD68E9600DE2440 /* DevelopmentViewController.swift */; };
 		14740B012BD6941700DE2440 /* SettingsTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14740B002BD6941700DE2440 /* SettingsTypes.swift */; };
-		14740B032BD6C15A00DE2440 /* UIKitScreenTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14740B022BD6C15A00DE2440 /* UIKitScreenTracking.swift */; };
 		14780F7B2AFBD6A700A7ECD9 /* RealtimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14780F7A2AFBD6A700A7ECD9 /* RealtimeManager.swift */; };
 		14780F812AFCEA7000A7ECD9 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 14780F802AFCEA7000A7ECD9 /* Reachability */; };
 		148D496A2B9A071E007DD94F /* CrowdinSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 148D49692B9A071E007DD94F /* CrowdinSDK */; };
@@ -526,7 +524,6 @@
 		53B15867293F72B00026E90B /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B15846293F623F0026E90B /* NotificationService.swift */; };
 		53B15869294227650026E90B /* FilterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B15868294227650026E90B /* FilterDetailsViewController.swift */; };
 		53EB77EE29D2EAC80036CDE1 /* NavigationHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EB77ED29D2EAC80036CDE1 /* NavigationHelpers.swift */; };
-		655609B62C162F80004233BC /* ArkanaKeys in Frameworks */ = {isa = PBXBuildFile; productRef = 655609B52C162F80004233BC /* ArkanaKeys */; };
 		662B60CE2A4A1E8600CB331F /* Embed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662B60C52A4A1E8600CB331F /* Embed.swift */; };
 		662B60CF2A4A1E8600CB331F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662B60C62A4A1E8600CB331F /* Model.swift */; };
 		662B60D02A4A1E8600CB331F /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662B60C72A4A1E8600CB331F /* Graph.swift */; };
@@ -565,7 +562,6 @@
 		66D091F62A53692F00291B8D /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D091F52A53692F00291B8D /* RoundedTextField.swift */; };
 		88330AC429F09BA40019AA62 /* MAMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88330AC329F09BA40019AA62 /* MAMenu.swift */; };
 		88722D9629FC5A7200988277 /* PostActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88722D9529FC5A7200988277 /* PostActions.swift */; };
-		887B32962A0AC72A00EE7EE3 /* ArkanaKeys in Frameworks */ = {isa = PBXBuildFile; productRef = 887B32952A0AC72A00EE7EE3 /* ArkanaKeys */; };
 		88B9D50E29E9F7DC00A7B1BC /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B9D50B29E9EB9400A7B1BC /* BundleExtension.swift */; };
 		88C69FC729FC474D0085C6A3 /* RepostButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C69FC629FC474D0085C6A3 /* RepostButtonView.swift */; };
 		88EFEB2A2AC236E10040228B /* MothSocialJWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFEB292AC236E10040228B /* MothSocialJWT.swift */; };
@@ -764,6 +760,8 @@
 		D87449C72A968D39002A0603 /* RotatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87449C62A968D39002A0603 /* RotatingViewController.swift */; };
 		D8CA77612AB90D4000F49ECC /* ShareableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CA77602AB90D4000F49ECC /* ShareableViewController.swift */; };
 		D8DE092F2A3D12D800DD0483 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE092E2A3D12D800DD0483 /* Haptics.swift */; };
+		D8E5E55D2D0F728300C347BB /* Mammoth.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D8E5E55C2D0F728300C347BB /* Mammoth.xcconfig */; };
+		D8E5E55F2D0F73C200C347BB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E5E55E2D0F73C200C347BB /* Configuration.swift */; };
 		EB347F4C2C266749007311C6 /* CloudSyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB347F4B2C266749007311C6 /* CloudSyncManager.swift */; };
 		EF44AFA12C30C9C5009084DC /* LinkOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44AFA02C30C9C5009084DC /* LinkOpener.swift */; };
 		EF44AFA32C30D340009084DC /* LinkOpenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44AFA22C30D340009084DC /* LinkOpenerTests.swift */; };
@@ -850,7 +848,6 @@
 		146C6A462B48113500A002D7 /* String+StripEmojis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+StripEmojis.swift"; sourceTree = "<group>"; };
 		14740AFE2BD68E9600DE2440 /* DevelopmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentViewController.swift; sourceTree = "<group>"; };
 		14740B002BD6941700DE2440 /* SettingsTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTypes.swift; sourceTree = "<group>"; };
-		14740B022BD6C15A00DE2440 /* UIKitScreenTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitScreenTracking.swift; sourceTree = "<group>"; };
 		14780F7A2AFBD6A700A7ECD9 /* RealtimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeManager.swift; sourceTree = "<group>"; };
 		149A68232AD6A1FE00E72A83 /* Mute-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "Mute-master"; path = "../Mute-master"; sourceTree = "<group>"; };
 		149A68282AD6A4E200E72A83 /* Mute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mute.swift; sourceTree = "<group>"; };
@@ -1397,7 +1394,6 @@
 		66D091F52A53692F00291B8D /* RoundedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		88330AC329F09BA40019AA62 /* MAMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAMenu.swift; sourceTree = "<group>"; };
 		88722D9529FC5A7200988277 /* PostActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostActions.swift; sourceTree = "<group>"; };
-		887B32992A0AD22000EE7EE3 /* ArkanaKeys */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ArkanaKeys; path = ArkanaKeys/ArkanaKeys; sourceTree = "<group>"; };
 		88B9D50B29E9EB9400A7B1BC /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		88C69FC629FC474D0085C6A3 /* RepostButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepostButtonView.swift; sourceTree = "<group>"; };
 		88EFEB292AC236E10040228B /* MothSocialJWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MothSocialJWT.swift; sourceTree = "<group>"; };
@@ -1593,6 +1589,8 @@
 		D87449C62A968D39002A0603 /* RotatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotatingViewController.swift; sourceTree = "<group>"; };
 		D8CA77602AB90D4000F49ECC /* ShareableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareableViewController.swift; sourceTree = "<group>"; };
 		D8DE092E2A3D12D800DD0483 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
+		D8E5E55C2D0F728300C347BB /* Mammoth.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Mammoth.xcconfig; sourceTree = "<group>"; };
+		D8E5E55E2D0F73C200C347BB /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		EB347F4B2C266749007311C6 /* CloudSyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSyncManager.swift; sourceTree = "<group>"; };
 		EF44AFA02C30C9C5009084DC /* LinkOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkOpener.swift; sourceTree = "<group>"; };
 		EF44AFA22C30D340009084DC /* LinkOpenerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkOpenerTests.swift; sourceTree = "<group>"; };
@@ -1618,14 +1616,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				887B32962A0AC72A00EE7EE3 /* ArkanaKeys in Frameworks */,
 				539F3A2C292282FE0090CD00 /* Kingfisher in Frameworks */,
 				88EFEB2D2AC23A3C0040228B /* SwiftJWT in Frameworks */,
 				532F291829476B29003C9FAD /* InputBarAccessoryView in Frameworks */,
-				655609B62C162F80004233BC /* ArkanaKeys in Frameworks */,
 				14780F812AFCEA7000A7ECD9 /* Reachability in Frameworks */,
 				533993F82914201500560F83 /* SDWebImage in Frameworks */,
-				1440C9062BCD811C00799A4F /* Segment in Frameworks */,
+				1440C9062BCD811C00799A4F /* (null) in Frameworks */,
 				144DC6CF2B17552400F4EE98 /* StoreKit.framework in Frameworks */,
 				5339970F291422D400560F83 /* OrderedCollections in Frameworks */,
 				532F291529476916003C9FAD /* MessageKit in Frameworks */,
@@ -1719,8 +1715,8 @@
 		533993D629141F4600560F83 = {
 			isa = PBXGroup;
 			children = (
+				D8E5E55C2D0F728300C347BB /* Mammoth.xcconfig */,
 				655609B72C1757AA004233BC /* README.md */,
-				887B328E2A0AC07000EE7EE3 /* Packages */,
 				533993E129141F4600560F83 /* Mammoth */,
 				53B15845293F623F0026E90B /* MammothNotificationServiceExtension */,
 				532567FD2976FA3A004E7636 /* Mammoth Share Extension */,
@@ -2635,14 +2631,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		887B328E2A0AC07000EE7EE3 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				887B32992A0AD22000EE7EE3 /* ArkanaKeys */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 		BF0DC4AB2A1C21FD0072C1DA /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -2804,8 +2792,8 @@
 				14E08C692B20BF9C00EF5A55 /* DeviceHelpers.swift */,
 				1441736C2B2B1FDA0058AFCC /* SDImageTransformers.swift */,
 				BF45FDE92B34FF1800246C54 /* SettingsIcons.swift */,
-				14740B022BD6C15A00DE2440 /* UIKitScreenTracking.swift */,
 				EF44AFA02C30C9C5009084DC /* LinkOpener.swift */,
+				D8E5E55E2D0F73C200C347BB /* Configuration.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -3168,7 +3156,6 @@
 				539F3A2B292282FE0090CD00 /* Kingfisher */,
 				532F291429476916003C9FAD /* MessageKit */,
 				532F291729476B29003C9FAD /* InputBarAccessoryView */,
-				887B32952A0AC72A00EE7EE3 /* ArkanaKeys */,
 				662B60EE2A4A1F6D00CB331F /* JWTDecode */,
 				88EFEB2C2AC23A3C0040228B /* SwiftJWT */,
 				14780F802AFCEA7000A7ECD9 /* Reachability */,
@@ -3176,8 +3163,6 @@
 				F0ED503B2B949A2C00F7525B /* MetaTextKit */,
 				148D49692B9A071E007DD94F /* CrowdinSDK */,
 				F054D25B2B9C9E07006130A4 /* MetaTextKit */,
-				1440C9052BCD811C00799A4F /* Segment */,
-				655609B52C162F80004233BC /* ArkanaKeys */,
 			);
 			productName = Mastodon;
 			productReference = 533993DF29141F4600560F83 /* Mammoth.app */;
@@ -3293,8 +3278,6 @@
 				146C6A412B3453E000A002D7 /* XCRemoteSwiftPackageReference "UnifiedBlurHash" */,
 				148D49682B9A04F2007DD94F /* XCRemoteSwiftPackageReference "mobile-sdk-ios" */,
 				F054D25A2B9C9E07006130A4 /* XCRemoteSwiftPackageReference "MetaTextKit" */,
-				1440C9042BCD811C00799A4F /* XCRemoteSwiftPackageReference "analytics-swift" */,
-				655609B42C162F80004233BC /* XCLocalSwiftPackageReference "ArkanaKeys/ArkanaKeys" */,
 			);
 			productRefGroup = 533993E029141F4600560F83 /* Products */;
 			projectDirPath = "";
@@ -3415,6 +3398,7 @@
 				14C45DD22B1A1F8C000171A9 /* Nicholas.png in Resources */,
 				14C45D812B1A1F8C000171A9 /* Layout@2x.png in Resources */,
 				14C45DDE2B1A1F8C000171A9 /* Blue Jay@2x.png in Resources */,
+				D8E5E55D2D0F728300C347BB /* Mammoth.xcconfig in Resources */,
 				5383F1E829796808005F1B20 /* IconB5@2x.png in Resources */,
 				14C45D882B1A1F8C000171A9 /* Carroll@2x.png in Resources */,
 				14C45D992B1A1F8C000171A9 /* Six Colors Dark@3x.png in Resources */,
@@ -3787,7 +3771,6 @@
 				C3BBEEDF2A97577C0027C761 /* Carousel.swift in Sources */,
 				5339968F2914227A00560F83 /* Disk+Errors.swift in Sources */,
 				533996D82914227A00560F83 /* TOCroppedImageAttributes.m in Sources */,
-				14740B032BD6C15A00DE2440 /* UIKitScreenTracking.swift in Sources */,
 				662B612C2A4A245000CB331F /* BlueskyPostViewModel.swift in Sources */,
 				53399A73291526B900560F83 /* Trending.swift in Sources */,
 				533994B52914214A00560F83 /* ExploreViewController.swift in Sources */,
@@ -3908,6 +3891,7 @@
 				53399A76291526B900560F83 /* Client.swift in Sources */,
 				53EB77EE29D2EAC80036CDE1 /* NavigationHelpers.swift in Sources */,
 				533996862914227A00560F83 /* SKToolbar.swift in Sources */,
+				D8E5E55F2D0F73C200C347BB /* Configuration.swift in Sources */,
 				53450E692936127C00D720EA /* URLTransform.swift in Sources */,
 				53450E6F2936127C00D720EA /* Mapper.swift in Sources */,
 				53450E6C2936127C00D720EA /* EnumOperators.swift in Sources */,
@@ -4268,6 +4252,7 @@
 /* Begin XCBuildConfiguration section */
 		532568082976FA3B004E7636 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8E5E55C2D0F728300C347BB /* Mammoth.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Mammoth Share Extension/Mammoth Share Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -4295,6 +4280,7 @@
 		};
 		532568092976FA3B004E7636 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8E5E55C2D0F728300C347BB /* Mammoth.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Mammoth Share Extension/Mammoth Share Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -4322,6 +4308,7 @@
 		};
 		533993F129141F4700560F83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8E5E55C2D0F728300C347BB /* Mammoth.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -4386,6 +4373,7 @@
 		};
 		533993F229141F4700560F83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8E5E55C2D0F728300C347BB /* Mammoth.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -4445,6 +4433,7 @@
 		};
 		533993F429141F4700560F83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8E5E55C2D0F728300C347BB /* Mammoth.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -4454,7 +4443,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 518;
-				DEVELOPMENT_TEAM = W44P88K5SB;
+				DEVELOPMENT_TEAM = 4H44S5YAWR;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Mammoth/Info.plist;
@@ -4494,6 +4483,7 @@
 		};
 		533993F529141F4700560F83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8E5E55C2D0F728300C347BB /* Mammoth.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -4503,7 +4493,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 518;
-				DEVELOPMENT_TEAM = W44P88K5SB;
+				DEVELOPMENT_TEAM = 4H44S5YAWR;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Mammoth/Info.plist;
@@ -4543,6 +4533,7 @@
 		};
 		53B1584D293F623F0026E90B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8E5E55C2D0F728300C347BB /* Mammoth.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = MammothNotificationServiceExtension/MammothNotificationServiceExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -4572,6 +4563,7 @@
 		};
 		53B1584E293F623F0026E90B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8E5E55C2D0F728300C347BB /* Mammoth.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = MammothNotificationServiceExtension/MammothNotificationServiceExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -4601,6 +4593,7 @@
 		};
 		BFCC9AB529AAF8130081CE3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8E5E55C2D0F728300C347BB /* Mammoth.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -4622,6 +4615,7 @@
 		};
 		BFCC9AB629AAF8130081CE3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8E5E55C2D0F728300C347BB /* Mammoth.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -4643,6 +4637,7 @@
 		};
 		BFDB560C29D8D4F700FC6F92 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8E5E55C2D0F728300C347BB /* Mammoth.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -4663,6 +4658,7 @@
 		};
 		BFDB560D29D8D4F700FC6F92 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8E5E55C2D0F728300C347BB /* Mammoth.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -4740,22 +4736,7 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		655609B42C162F80004233BC /* XCLocalSwiftPackageReference "ArkanaKeys/ArkanaKeys" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ArkanaKeys/ArkanaKeys;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
-		1440C9042BCD811C00799A4F /* XCRemoteSwiftPackageReference "analytics-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/segmentio/analytics-swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.5.9;
-			};
-		};
 		144DC74E2B17698200F4EE98 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-collections.git";
@@ -4855,11 +4836,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1440C9052BCD811C00799A4F /* Segment */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1440C9042BCD811C00799A4F /* XCRemoteSwiftPackageReference "analytics-swift" */;
-			productName = Segment;
-		};
 		146C6A422B34545B00A002D7 /* UnifiedBlurHash */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 146C6A412B3453E000A002D7 /* XCRemoteSwiftPackageReference "UnifiedBlurHash" */;
@@ -4899,18 +4875,10 @@
 			package = 539F3A2A292282FE0090CD00 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
-		655609B52C162F80004233BC /* ArkanaKeys */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ArkanaKeys;
-		};
 		662B60EE2A4A1F6D00CB331F /* JWTDecode */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 662B60ED2A4A1F6D00CB331F /* XCRemoteSwiftPackageReference "JWTDecode" */;
 			productName = JWTDecode;
-		};
-		887B32952A0AC72A00EE7EE3 /* ArkanaKeys */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ArkanaKeys;
 		};
 		88EFEB2C2AC23A3C0040228B /* SwiftJWT */ = {
 			isa = XCSwiftPackageProductDependency;

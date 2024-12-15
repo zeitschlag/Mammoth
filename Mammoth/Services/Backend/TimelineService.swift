@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ArkanaKeys
 
 enum TimelineType {
     case `public`
@@ -81,8 +80,7 @@ struct TimelineService {
     /// DOES NOT require auth
     static func forYouMammothPicks(range: RequestRange = .default) async throws -> ([Status], cursorId: String?) {
         let request = Timelines.forYouMammothPicks(range: range)
-        // Move this to Arkana probably
-        let client = Client(baseURL: ArkanaKeys.Global().forYouEndpoint)
+        let client = Client(baseURL: Configuration.ForYouEndpoint)
         let result = try await ClientService.runRequest(client: client, request: request)
         return (result.filter({ $0.visibility != .direct }), cursorId: result.last?.id)
     }
