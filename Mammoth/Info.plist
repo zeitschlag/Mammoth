@@ -2,6 +2,24 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>JOIN_COMMUNITY_PAGE_URL</key>
+	<string>$(JOIN_COMMUNITY_PAGE_URL)</string>
+	<key>PUSH_NOTIFICATION_URL</key>
+	<string>$(PUSH_NOTIFICATION_URL)</string>
+	<key>MOTH_SOCIAL_SECRET_KEY</key>
+	<string>$(MOTH_SOCIAL_SECRET_KEY)</string>
+	<key>FOR_YOU_ENDPOINT</key>
+	<string>$(FOR_YOU_ENDPOINT)</string>
+	<key>IAP_VERIFICATION_SECRET</key>
+	<string>$(IAP_VERIFICATION_SECRET)</string>
+	<key>INSTANCE_SOCIAL_API</key>
+	<string>$(INSTANCE_SOCIAL_API)</string>
+	<key>CROWDIN_DISTRIBUTION_STRING</key>
+	<string>$(CROWDIN_DISTRIBUTION_STRING)</string>
+	<key>SWIFTY_GIPHY_API</key>
+	<string>$(SWIFTY_GIPHY_API)</string>
+	<key>SUB_CLUB_DOMAIN</key>
+	<string>$(SUB_CLUB_DOMAIN)</string>
 	<key>CFBundleIcons</key>
 	<dict>
 		<key>CFBundleAlternateIcons</key>

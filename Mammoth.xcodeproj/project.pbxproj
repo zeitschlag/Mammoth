@@ -757,6 +757,8 @@
 		C3F3B02B2A4E47F2008FC4B7 /* NewsFeedViewModel+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F3B02A2A4E47F2008FC4B7 /* NewsFeedViewModel+DataSource.swift */; };
 		C3FD24EC2A45DC3100AAAFE4 /* EmptyFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FD24EB2A45DC3100AAAFE4 /* EmptyFeedCell.swift */; };
 		C3FD55072A2F6954000EA8A4 /* PostCardPoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FD55062A2F6954000EA8A4 /* PostCardPoll.swift */; };
+		D841C13A2D1027A100FD8788 /* Mammoth.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D8E5E55C2D0F728300C347BB /* Mammoth.xcconfig */; };
+		D841C13B2D1027A100FD8788 /* Mammoth.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D8E5E55C2D0F728300C347BB /* Mammoth.xcconfig */; };
 		D87449C72A968D39002A0603 /* RotatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87449C62A968D39002A0603 /* RotatingViewController.swift */; };
 		D8CA77612AB90D4000F49ECC /* ShareableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CA77602AB90D4000F49ECC /* ShareableViewController.swift */; };
 		D8DE092F2A3D12D800DD0483 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE092E2A3D12D800DD0483 /* Haptics.swift */; };
@@ -1621,7 +1623,6 @@
 				532F291829476B29003C9FAD /* InputBarAccessoryView in Frameworks */,
 				14780F812AFCEA7000A7ECD9 /* Reachability in Frameworks */,
 				533993F82914201500560F83 /* SDWebImage in Frameworks */,
-				1440C9062BCD811C00799A4F /* (null) in Frameworks */,
 				144DC6CF2B17552400F4EE98 /* StoreKit.framework in Frameworks */,
 				5339970F291422D400560F83 /* OrderedCollections in Frameworks */,
 				532F291529476916003C9FAD /* MessageKit in Frameworks */,
@@ -3297,6 +3298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D841C13B2D1027A100FD8788 /* Mammoth.xcconfig in Resources */,
 				532568022976FA3A004E7636 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3531,6 +3533,7 @@
 			files = (
 				533B06ED29896467003A01B8 /* soundPush.wav in Resources */,
 				533B06E129896004003A01B8 /* Assets.xcassets in Resources */,
+				D841C13A2D1027A100FD8788 /* Mammoth.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
