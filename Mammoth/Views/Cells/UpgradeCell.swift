@@ -307,7 +307,6 @@ final class UpgradeRootView: UIView, UpgradeOptionDelegate {
                 
                 switch type {
                 case .disabled:
-                    AnalyticsManager.track(event: .failedToUpgrade)
                     let alert = UIAlertController(title: NSLocalizedString("error.purchaseError", comment: ""), message: type.message(), preferredStyle: UIAlertController.Style.alert)
                     alert.addAction(UIAlertAction(title: NSLocalizedString("generic.ok", comment: ""), style: UIAlertAction.Style.default, handler: nil))
             
@@ -316,8 +315,7 @@ final class UpgradeRootView: UIView, UpgradeOptionDelegate {
                     }
                 case .failed(let error):
                     self.state = .unsubscribed
-                    AnalyticsManager.track(event: .failedToUpgrade)
-                    
+
                     guard (error as? NSError)?.description.range(of: NSLocalizedString("error.paymentSheet", comment: "")) == nil else { return }
                     
                     let alert = UIAlertController(title: NSLocalizedString("error.purchaseError", comment: ""), message: type.message(), preferredStyle: UIAlertController.Style.alert)
@@ -328,10 +326,8 @@ final class UpgradeRootView: UIView, UpgradeOptionDelegate {
                     }
                 case .restored:
                     self.state = .subscribed
-                    AnalyticsManager.track(event: .restoredToGold)
                 case .purchased:
                     self.state = .thanks
-                    AnalyticsManager.track(event: .upgradedToGold)
                 }
             }
         }

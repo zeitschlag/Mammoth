@@ -187,7 +187,6 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                 DispatchQueue.main.async {
                     self.canSignUp = false
                     log.debug("success registering")
-                    AnalyticsManager.track(event: .accountCreated)
                     triggerHapticNotification()
                                         
                     // show email prompt

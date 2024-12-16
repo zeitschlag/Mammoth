@@ -51,16 +51,14 @@ class DevelopmentViewController: UIViewController, UITableViewDataSource, UITabl
         // Update the appearance of the navbar
         configureNavigationBarLayout(navigationController: self.navigationController, userInterfaceStyle: self.traitCollection.userInterfaceStyle)
     }
-    
+
+    @available(*, deprecated)
     @objc func switchAnalytics(_ sender: UISwitch) {
         if sender.isOn {
             GlobalStruct.shareAnalytics = true
-            AccountsManager.shared.syncIdentityData()
-            AnalyticsManager.subscribe()
             UserDefaults.standard.set(true, forKey: "shareAnalytics")
         } else {
             GlobalStruct.shareAnalytics = false
-            AnalyticsManager.unsubscribe()
             UserDefaults.standard.set(false, forKey: "shareAnalytics")
         }
     }

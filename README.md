@@ -13,16 +13,11 @@ The Mammoth Team
 
 ### Requirements:
 
-- A modern Xcode
-- 
+- A modern Xcode. That's it.
 
 ```zsh
 brew install swiftlint
 ```
-
-### Troubleshooting
-
-### Adding Private Keys
 
 ## License
 

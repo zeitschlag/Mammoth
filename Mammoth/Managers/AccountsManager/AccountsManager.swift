@@ -115,11 +115,6 @@ class AccountsManager {
         RealtimeManager.shared.disconnect()
         RealtimeManager.shared.clearAllListeners()
         
-        if currentAccount != nil {
-            AnalyticsManager.track(event: .switchingAccount)
-            AnalyticsManager.reset()
-        }
-        
         currentAccount = acctData
         if currentAccount != nil {
             if let acctHandler = acctHandlerForAcctData(acctData) {
@@ -129,8 +124,6 @@ class AccountsManager {
                     } else {
                         // Store current account to disk
                         UserDefaults.standard.set(acctData?.uniqueID, forKey: "currentAccountIdentifier")
-                        
-                        self.syncIdentityData()
 
                         // Let the rest of the app know
                         AccountsManagerShim.shared.didSwitchCurrentAccount(forceUIRefresh: forceUIRefresh)
@@ -155,18 +148,7 @@ class AccountsManager {
             AccountsManagerShim.shared.didSwitchCurrentAccount(forceUIRefresh: true)
         }
     }
-    
-    @MainActor public func syncIdentityData() {
-        if let identity = self.sanitizedCurrentIdentityData {
-            AnalyticsManager.alias(userId: identity.id)
-            AnalyticsManager.identity(userId: identity.id, identity: identity)
-            
-            if let token = GlobalStruct.deviceToken {
-                AnalyticsManager.setDeviceToken(token: token)
-            }
-        }
-    }
-    
+
     public func updateAccount(_ acctData: (any AcctDataType)) {
         let existingAcctIndex = allAccounts.firstIndex(where: {$0.uniqueID == acctData.uniqueID})
         if existingAcctIndex != nil {
@@ -177,10 +159,6 @@ class AccountsManager {
         }
         if acctData.uniqueID == currentAccount?.uniqueID {
             currentAccount = acctData
-            
-            DispatchQueue.main.async { [weak self] in
-                self?.syncIdentityData()
-            }
         }
     }
     
@@ -199,8 +177,6 @@ class AccountsManager {
 
                     // Save account info
                     self.storeAccountsToDisk()
-                    
-                    AnalyticsManager.track(event: .loggedIn)
                     
                     // Make this the current account
                     self.switchToAccount(acctData, forceUIRefresh: false)
@@ -230,9 +206,7 @@ class AccountsManager {
 
                     // Save account info
                     self.storeAccountsToDisk()
-                    
-                    AnalyticsManager.track(event: .verifiedEmail)
-                    
+
                     // Make this the current account
                     self.switchToAccount(acctData, forceUIRefresh: false)
 
@@ -300,8 +274,6 @@ class AccountsManager {
             AccountCacher.clearCache(forAccount: mastodonAcctData.account)
         }
         
-        AnalyticsManager.unsubscribe()
-
         // • remove from data structures
         let isCurrentAccount = self.currentAccount?.isEqualTo(other: acctData) ?? false
         if isCurrentAccount {

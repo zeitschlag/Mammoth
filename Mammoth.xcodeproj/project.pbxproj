@@ -776,7 +776,6 @@
 		F0ED082F2BB61DC00046B9EA /* RelationshipSeveranceEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED082E2BB61DC00046B9EA /* RelationshipSeveranceEvent.swift */; };
 		F0ED08312BB61F380046B9EA /* RelationshipSeveranceEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED08302BB61F380046B9EA /* RelationshipSeveranceEventType.swift */; };
 		F0ED503C2B949A2C00F7525B /* MetaTextKit in Frameworks */ = {isa = PBXBuildFile; productRef = F0ED503B2B949A2C00F7525B /* MetaTextKit */; };
-		F0F6A5DD2ACCA9C1004FD05F /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6A5DC2ACCA9C1004FD05F /* AnalyticsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1603,7 +1602,6 @@
 		F084802C2B8BBF02005201A7 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F0ED082E2BB61DC00046B9EA /* RelationshipSeveranceEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationshipSeveranceEvent.swift; sourceTree = "<group>"; };
 		F0ED08302BB61F380046B9EA /* RelationshipSeveranceEventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationshipSeveranceEventType.swift; sourceTree = "<group>"; };
-		F0F6A5DC2ACCA9C1004FD05F /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3013,7 +3011,6 @@
 				BF492DB129F33550004100B8 /* StatusCache.swift */,
 				BF48B9312A8FE54F00DE6BFC /* ToastNotification.swift */,
 				C34475612AB0ADA1000FB335 /* FeedsManager.swift */,
-				F0F6A5DC2ACCA9C1004FD05F /* AnalyticsManager.swift */,
 				C3EE659F2AD43E91009489EE /* ModerationManager.swift */,
 				149A68302AD6CE3700E72A83 /* AVManager.swift */,
 				14BE1A512AF1047D00C13189 /* PushNotificationManager.swift */,
@@ -3938,7 +3935,6 @@
 				C3BFC59F2A5F4750006F8153 /* LatestPill.swift in Sources */,
 				53399A40291526B900560F83 /* Report.swift in Sources */,
 				6671448F2A4E924500C93E3B /* PostCardModel.swift in Sources */,
-				F0F6A5DD2ACCA9C1004FD05F /* AnalyticsManager.swift in Sources */,
 				536AEDF529D6017C00AC0EF8 /* GIF2MP4.swift in Sources */,
 				533996E62914227A00560F83 /* DetailFooterCell.swift in Sources */,
 				BF492DB229F33550004100B8 /* StatusCache.swift in Sources */,

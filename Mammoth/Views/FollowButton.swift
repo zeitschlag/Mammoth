@@ -136,8 +136,6 @@ internal extension FollowButton {
                         self.updateButton(user: user)
                     }
                     
-                    AnalyticsManager.track(event: .follow)
-                    
                     if user.followStatus != .followRequested {
                         await MainActor.run {
                             NotificationCenter.default.post(name: Notification.Name(rawValue: "reloadTableSuggestions"), object: nil)
@@ -163,8 +161,6 @@ internal extension FollowButton {
                         self.updateButton(user: user)
                         NotificationCenter.default.post(name: Notification.Name(rawValue: "reloadTableSuggestions"), object: nil)
                     }
-                    
-                    AnalyticsManager.track(event: .unfollow)
 
                 } catch let error {
                     log.error("Unfollow error: \(error)")

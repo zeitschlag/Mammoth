@@ -573,8 +573,6 @@ extension ProfileHeader {
                         self.user?.syncFollowStatus()
                     }
                     
-                    AnalyticsManager.track(event: .follow)
-                    
                     if userCard.followStatus != .followRequested {
                         DispatchQueue.main.async {
                             NotificationCenter.default.post(name: Notification.Name(rawValue: "reloadTableSuggestions"), object: nil)
@@ -601,7 +599,6 @@ extension ProfileHeader {
                         NotificationCenter.default.post(name: Notification.Name(rawValue: "reloadTableSuggestions"), object: nil)
                     }
                     
-                    AnalyticsManager.track(event: .unfollow)
                 } catch let error {
                     log.error("Unfollow error: \(error)")
                 }

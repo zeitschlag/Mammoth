@@ -82,8 +82,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         let currentAccount = AccountsManager.shared.currentAccount as? MastodonAcctData
         if currentAccount == nil {
             log.error("currentAccount is nil in didRegisterForRemoteNotificationsWithDeviceToken")
-        } else {
-            AccountsManager.shared.syncIdentityData()
         }
         
         let accountDidChange = (GlobalStruct.deviceTokenAccountUID != currentAccount?.uniqueID)
