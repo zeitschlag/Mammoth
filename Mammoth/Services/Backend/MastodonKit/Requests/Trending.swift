@@ -22,7 +22,7 @@ public struct TrendingTags {
         return Request<[Tag]>(path: "/api/v1/followed_tags")
     }
     
-    /// - Parameter rebuild: Request that the feed be rebuild (moth.social only).
+    /// - Parameter rebuild: Request that the feed be rebuild (rheinneckar.social only).
     public static func follow(id: String, rebuild: Bool = false) -> Request<Tag> {
         var method: HTTPMethod
         if rebuild {
@@ -34,7 +34,7 @@ public struct TrendingTags {
         return Request<Tag>(path: "/api/v1/tags/\(id)/follow", method: method)
     }
     
-    /// - Parameter rebuild: Request that the feed be rebuild (moth.social only).
+    /// - Parameter rebuild: Request that the feed be rebuild (rheinneckar.social only).
     public static func unfollow(id: String, rebuild: Bool = false) -> Request<Tag> {
         var method: HTTPMethod
         if rebuild {

@@ -68900,7 +68900,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Logs können dein Account Handle (@mammoth@moth.social), aber niemals Login-Informationen, Text von Beiträgen, Direktnachrichten oder andere private Informationen enthalten. Du kannst den E-Mail-Anhang überprüfen, bevor er gesendet wird."
+            "value" : "Logs können dein Account Handle (@mammoth@rheinneckar.social), aber niemals Login-Informationen, Text von Beiträgen, Direktnachrichten oder andere private Informationen enthalten. Du kannst den E-Mail-Anhang überprüfen, bevor er gesendet wird."
           }
         },
         "el" : {
@@ -68912,13 +68912,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Logs may include your account handles (@mammoth@moth.social), but never login information, text from posts or DMs, or any other private info. You can review the email attachment before it's sent."
+            "value" : "Logs may include your account handles (@mammoth@rheinneckar.social), but never login information, text from posts or DMs, or any other private info. You can review the email attachment before it's sent."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Los registros pueden incluir los nombres de tu cuenta (@mammoth@moth.social), pero nunca la información de inicio de sesión, el texto de mensajes o DM, o cualquier otra información privada. Puedes revisar el archivo adjunto de correo electrónico antes de que sea enviado."
+            "value" : "Los registros pueden incluir los nombres de tu cuenta (@mammoth@rheinneckar.social), pero nunca la información de inicio de sesión, el texto de mensajes o DM, o cualquier otra información privada. Puedes revisar el archivo adjunto de correo electrónico antes de que sea enviado."
           }
         },
         "fi" : {
@@ -68948,7 +68948,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "I log potrebbero includere i tuoi nomi utente (@mammoth@moth.social), ma mai le informazioni di accesso, il testo dei post o dei messaggi o qualsiasi altra informazione privata. Puoi verificare l'allegato email prima dell'invio."
+            "value" : "I log potrebbero includere i tuoi nomi utente (@mammoth@rheinneckar.social), ma mai le informazioni di accesso, il testo dei post o dei messaggi o qualsiasi altra informazione privata. Puoi verificare l'allegato email prima dell'invio."
           }
         },
         "ja" : {
@@ -68972,7 +68972,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Logs kunnen je gebruikersnaam bevatten (@mammoth@moth.social), maar nooit login informatie, DMs, of andere privéinfo. Je kunt de e-mailbijlage nakijken voordat deze wordt verzonden."
+            "value" : "Logs kunnen je gebruikersnaam bevatten (@mammoth@rheinneckar.social), maar nooit login informatie, DMs, of andere privéinfo. Je kunt de e-mailbijlage nakijken voordat deze wordt verzonden."
           }
         },
         "pl" : {
@@ -68989,8 +68989,8 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Logs podem incluir seus nomes de usuário (@mammoth@moth.social), mas nunca informações de login, texto de publicações ou DMs ou quaisquer outras informações pessoais. Você pode revisar o anexo do email antes de enviá-lo."
+            "state" : "needs_review",
+            "value" : "Logs podem incluir seus nomes de usuário (@mammoth@rheinneckar.social), mas nunca informações de login, texto de publicações ou DMs ou quaisquer outras informações pessoais. Você pode revisar o anexo do email antes de enviá-lo."
           }
         },
         "ro" : {

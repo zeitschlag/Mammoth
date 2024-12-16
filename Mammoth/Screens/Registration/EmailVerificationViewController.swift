@@ -111,7 +111,7 @@ class EmailVerificationViewController: UIViewController {
         
         // This doesn't appear to work; it's returning a 404
         
-        let urlStr = "https://moth.social/api/v1/emails/confirmation"
+        let urlStr = "https://rheinneckar.social/api/v1/emails/confirmation"
         let url: URL = URL(string: urlStr)!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -151,9 +151,9 @@ class EmailVerificationViewController: UIViewController {
                     return
                 }
                 
-                // Channels don't work if logged in account is not copied to moth.social.
+                // Channels don't work if logged in account is not copied to rheinneckar.social.
                 // To fix this, we ping `v4/timelines/for_you/me` after login.
-                // This will trigger the right backend event to copy the user's account to moth.social.
+                // This will trigger the right backend event to copy the user's account to rheinneckar.social.
                 Task {
                     if case .Mastodon = AccountsManager.shared.currentAccount?.acctType {
                         do {

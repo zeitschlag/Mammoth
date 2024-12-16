@@ -251,11 +251,7 @@ public struct GlobalStruct {
 }
 
 public func GlobalHostServer() -> String {
-    if CommandLine.arguments.contains("-M_STAGING_SERVER") {
-        return "staging.moth.social"
-    } else {
-        return "moth.social"
-    }
+    return "rheinneckar.social"
 }
 
 struct Draft: Codable, Hashable {

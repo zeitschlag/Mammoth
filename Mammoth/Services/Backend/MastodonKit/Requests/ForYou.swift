@@ -105,7 +105,7 @@ extension Timelines {
     /// Retrieves the For You v4 curated timeline.
     ///
     /// - Parameters:
-    ///   - remoteFullOriginalAcct: full user handle 'jtomchak@infosec.social'  local Moth.social accounts can just be 'jtomchak'
+    ///   - remoteFullOriginalAcct: full user handle 'jtomchak@infosec.social'  local rheinneckar.social accounts can just be 'jtomchak'
     ///   - range: The bounds used when requesting data from Mastodon.
     /// - Returns: Request for `[Status]`.
      public static func forYouV4(remoteFullOriginalAcct: String, range: RequestRange = .default) -> Request<[Status]> {

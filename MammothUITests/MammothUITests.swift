@@ -36,14 +36,14 @@ final class MammothUITests: XCTestCase {
         app.staticTexts["Create an Account"].tap()
         
         // Check for the Username error message
-        XCTAssert(app.staticTexts["Your username will be unique to moth.social"].exists)
+        XCTAssert(app.staticTexts["Your username will be unique to rheinneckar.social"].exists)
         var elementsQuery = app.scrollViews.otherElements
         let usernameTextField = elementsQuery.textFields["Username…"]
         usernameTextField.tap()
         usernameTextField.typeText("username.")
         XCTAssert(app.staticTexts["Username can only contain letters, numbers, and underscores"].exists)
         usernameTextField.typeText(XCUIKeyboardKey.delete.rawValue)
-        XCTAssert(app.staticTexts["Your username will be unique to moth.social"].exists)
+        XCTAssert(app.staticTexts["Your username will be unique to rheinneckar.social"].exists)
 
         // Check for the Email error message
         XCTAssert(app.staticTexts["You will be sent a confirmation email"].exists)

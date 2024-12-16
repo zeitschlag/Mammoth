@@ -38,13 +38,13 @@ final class FollowManagerTest: XCTestCase {
         // For now, just assert that the app is logged into all three accounts,
         let accounts = Account.getAccounts()
         testBert1Account = accounts.first(where: { account in
-            account.fullAcct == "testbert1@moth.social"
+            account.fullAcct == "testbert1@rheinneckar.social"
         })
         testBert2Account = accounts.first(where: { account in
-            account.fullAcct == "TestBertTwo@moth.social"
+            account.fullAcct == "TestBertTwo@rheinneckar.social"
         })
         testBert3Account = accounts.first(where: { account in
-            account.fullAcct == "TestBertThree@moth.social"
+            account.fullAcct == "TestBertThree@rheinneckar.social"
         })
         
         XCTAssertTrue(accounts.contains(testBert1Account), "TestBert1 must be logged in")

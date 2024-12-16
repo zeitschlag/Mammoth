@@ -100,7 +100,7 @@ extension SetupMammothViewModel {
         self.state = .loading
         
         // Load the info for the Mammoth account
-        guard let mammothAccount = await AccountService.lookup("mammoth", serverName: "moth.social") else {
+        guard let mammothAccount = await AccountService.lookup("mammoth", serverName: "rheinneckar.social") else {
             log.error("unable to get Mammoth account info")
             let error = NSError(domain: "Unable to get Mammoth account info", code: 100)
             self.state = .error(error)
@@ -122,7 +122,7 @@ extension SetupMammothViewModel {
         Task {
             var mammothAccount = self.listData?.account
             if mammothAccount == nil {
-                mammothAccount = await AccountService.lookup("mammoth", serverName: "moth.social")
+                mammothAccount = await AccountService.lookup("mammoth", serverName: "rheinneckar.social")
             }
             if let mammothAccount {
                 await MainActor.run {

@@ -68,7 +68,7 @@ struct TimelineService {
         return (result.filter({ $0.visibility != .direct }), cursorId: result.last?.id)
     }
     
-    /// Fetches Statuses from Moth.social's For You Timeline
+    /// Fetches Statuses from rheinneckar.social's For You Timeline
     /// Requires full original account
     static func forYou(remoteFullOriginalAcct: String, range: RequestRange = .default) async throws -> ([Status], cursorId: String?) {
         let request = Timelines.forYouV4(remoteFullOriginalAcct: remoteFullOriginalAcct, range: range)

@@ -637,9 +637,9 @@ class SignInViewController: UIViewController, UITableViewDataSource, UITableView
             AccountsManager.shared.addExistingMastodonAccount(instanceData: GlobalStruct.newInstance!, client: GlobalStruct.newClient) { [weak self] error, acctData in
                 guard let self else { return }
                 
-                // Channels don't work if logged in account is not copied to moth.social.
+                // Channels don't work if logged in account is not copied to rheinneckar.social.
                 // To fix this, we ping `v4/timelines/for_you/me` after login.
-                // This will trigger the right backend event to copy the user's account to moth.social.
+                // This will trigger the right backend event to copy the user's account to rheinneckar.social.
                 Task {
                     if case .Mastodon = acctData?.acctType {
                         do {
@@ -657,7 +657,7 @@ class SignInViewController: UIViewController, UITableViewDataSource, UITableView
                             // Give these a chance to preload
                             SetupMammothViewModel.preload()
                             
-                            // Skip moth.social onboarding services
+                            // Skip rheinneckar.social onboarding services
                             // Exit the signup flow
                             if SetupMammothViewModel.shared.shouldShow() {
                                 // Go to the next screen

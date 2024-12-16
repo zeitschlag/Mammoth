@@ -252,7 +252,7 @@ extension Status {
             // Typical content:
             // Quote Posts from mammoth; similar from others
             //
-            // content = "<p>QP this!</p><p>From: <span class=\"h-card\"><a href=\"https://moth.social/@bart\" class=\"u-url mention\">@<span>bart</span></a></span><br /><a href=\"https://moth.social/@bart/110231660759681860\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">moth.social/@bart/110231660759</span><span class=\"invisible\">681860</span></a></p>"
+            // content = "<p>QP this!</p><p>From: <span class=\"h-card\"><a href=\"https://rheinneckar.social/@bart\" class=\"u-url mention\">@<span>bart</span></a></span><br /><a href=\"https://rheinneckar.social/@bart/110231660759681860\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">rheinneckar.social/@bart/110231660759</span><span class=\"invisible\">681860</span></a></p>"
             // content = "<p>Boom</p><p>From: @ploink<br /><a href=\"https://mastodon.design/@ploink/110272502146442833?public_follow=true\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">mastodon.design/@ploink/110272</span><span class=\"invisible\">502146442833?public_follow=true</span></a></p>"
             //
             // More examples: from this…

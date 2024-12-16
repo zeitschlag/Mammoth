@@ -239,7 +239,7 @@ public struct Accounts {
     ///
     /// - Parameter id: The account id.
     /// - Parameter reblogs: Whether to display the account's reblogs on the home timeline.
-    /// - Parameter rebuild: Request that the feed be rebuild (moth.social only).
+    /// - Parameter rebuild: Request that the feed be rebuild (rheinneckar.social only).
     /// - Returns: Request for `Account`.
     public static func follow(id: String, reblogs: Bool, rebuild: Bool = false) -> Request<Relationship> {
         let reb = reblogs ? "true" : "false"
@@ -254,7 +254,7 @@ public struct Accounts {
     /// Unfollow an account.
     ///
     /// - Parameter id: The account id.
-    /// - Parameter rebuild: Request that the feed be rebuild (moth.social only).
+    /// - Parameter rebuild: Request that the feed be rebuild (rheinneckar.social only).
     /// - Returns: Request for `Account`.
     public static func unfollow(id: String, rebuild: Bool = false) -> Request<Relationship> {
         var method: HTTPMethod

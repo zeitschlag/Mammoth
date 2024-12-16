@@ -11,7 +11,7 @@ import Foundation
 protocol AcctDataViewModel {
     var fullAcct: String { get }    // foo@bar.social
     var avatar: String { get }      // URL to the user's avatar
-    var remoteFullOriginalAcct: String { get } // MaMmoth@moth.social
+    var remoteFullOriginalAcct: String { get } // MaMmoth@rheinneckar.social
 }
 
 

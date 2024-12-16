@@ -173,14 +173,14 @@ class ProfileDirectoryViewController: LiveTableViewController, UITableViewDataSo
     }
     
     func fetchTimelines1(_ prevBatch: Bool = false, nextBatch: Bool = false) {
-        // moth.social user recommendations API
+        // rheinneckar.social user recommendations API
         if self.fromSuggestions {
             let request3 = Accounts.followRecommendations(self.currentUserID ?? "")
             self.client!.run(request3) { (statuses) in
                 if let error = statuses.error {
                     log.error("Failed to fetch follow recommendations: \(error)")
                     DispatchQueue.main.async {
-                        log.error("error fetching moth.social recommendations, fetch default suggestions instead")
+                        log.error("error fetching rheinneckar.social recommendations, fetch default suggestions instead")
                         let request2 = Accounts.followSuggestions()
                         self.client!.run(request2) { (statuses) in
                             if let stat = (statuses.value) {
